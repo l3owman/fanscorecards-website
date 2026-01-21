@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - FanScorecards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --text-primary: #f5f5f5;
+            --text-muted: #888888;
+            --accent: #d4af37;
+            --accent-dim: rgba(212, 175, 55, 0.15);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.75;
+            min-height: 100vh;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--accent-dim);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .highlight-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--accent-dim);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .contact-box .email-link {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .faq-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        footer p {
+            color: var(--text-muted);
+        }
+
+        .nav-link {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1.25rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-box {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">FANSCORECARDS</div>
+            <h1>Support</h1>
+            <p class="subtitle">We're here to help</p>
+        </header>
+
+        <main>
+            <p>Have a question, found a bug, or need assistance with FanScorecards? We'd love to hear from you.</p>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-box">
+                <p>For all support inquiries, please email us at:</p>
+                <p><a href="mailto:luke@fanscorecards.com" class="email-link">luke@fanscorecards.com</a></p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem; margin-bottom: 0;">We typically respond within 24-48 hours</p>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I create an account?</h3>
+                <p>You can create an account using your email address or Sign in with Apple. Tap "Sign Up" on the welcome screen to get started.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I score a fight?</h3>
+                <p>Navigate to an upcoming or live event, select a fight, and use the scoring interface to record your round-by-round scores. Your scorecards are automatically saved to your account.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I edit my scorecards after submitting?</h3>
+                <p>Yes, you can edit your scores at any time during the fight. Once a fight is marked as completed, your final scorecard is locked in.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete my account?</h3>
+                <p>To delete your account and all associated data, please contact us at the email address above. We will process your request promptly.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I restore my subscription on a new device?</h3>
+                <p>Sign in with the same account you used to purchase your subscription. Your subscription status will automatically sync. If you experience issues, use the "Restore Purchases" option in Settings.</p>
+            </div>
+
+            <h2>Report a Bug</h2>
+
+            <p>Found something not working correctly? When reporting a bug, please include:</p>
+
+            <div class="highlight-box">
+                <p><strong>1.</strong> A description of what happened</p>
+                <p><strong>2.</strong> What you expected to happen</p>
+                <p><strong>3.</strong> Your device model and iOS version</p>
+                <p style="margin-bottom: 0;"><strong>4.</strong> Screenshots if applicable</p>
+            </div>
+
+            <p>Send bug reports to <a href="mailto:luke@fanscorecards.com">luke@fanscorecards.com</a> with "Bug Report" in the subject line.</p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 FanScorecards. All rights reserved.</p>
+            <a href="/" class="nav-link">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>
